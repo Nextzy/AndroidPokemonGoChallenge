@@ -23,16 +23,16 @@
 >"นี่คือ URL สำคัญที่พี่แอบดักข้อมูลแล้วแกะมันออกมา ทั้งหมดนี้แสดงผลลัพธ์ออกมาเป็น JSON ทั้งหมด"
 
 ```
-http://sleepingforless.com:6789/pokemon
-http://sleepingforless.com:6789/pokemon/login
-http://sleepingforless.com:6789/pokemon/catchable
+http://<BASE_URL>/pokemon
+http://<BASE_URL>/pokemon/login
+http://<BASE_URL>/pokemon/catchable
 ```
 
 ทั้ง 3 ตัวนี้คือ URL ที่จำเป็นสำเร็จภารกิจของคุณ
 
 #### Server Status
 ```
-GET http://sleepingforless.com:6789/pokemon
+GET http://<BASE_URL>/pokemon
 ```
 เอาไว้เช็คเฉยๆว่าคุณสามารถเชื่อมต่อกับ Server ของตัวเกมได้หรือไม่
 
@@ -46,7 +46,7 @@ STATUS CODE : 200
 
 #### Login
 ```
-POST http://sleepingforless.com:6789/pokemon/login
+POST http://<BASE_URL>/pokemon/login
 ```
 ```
 **BODY (x-www-form-urlencoded)**
@@ -66,7 +66,7 @@ STATUS CODE : 200
 
 #### Get Catchable Pokemon
 ```
-GET http://sleepingforless.com:6789/pokemon/catchable
+GET http://<BASE_URL>/pokemon/catchable
 ```
 ```
 **HEADER**
